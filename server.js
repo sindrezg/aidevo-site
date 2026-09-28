@@ -1,4 +1,5 @@
 const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
@@ -46,6 +47,30 @@ function serveFile(filePath, res, cache) {
 
 const server = http.createServer((req, res) => {
   const url = req.url.split('?')[0];
+
+  const videoMatch = url.match(/^\/videos\/([A-Za-z0-9_\-]+\.mp4)$/);
+  if (videoMatch) {
+    const ghUrl = `https://raw.githubusercontent.com/sindrezg/aidevo-site/main/videos/${videoMatch[1]}`;
+    https.get(ghUrl, (ghRes) => {
+      if (ghRes.statusCode === 302 || ghRes.statusCode === 301) {
+        https.get(ghRes.headers.location, (rRes) => {
+          const len = rRes.headers['content-length'];
+          const headers = { 'Content-Type': 'video/mp4', 'Accept-Ranges': 'bytes', 'Cache-Control': 'public, max-age=86400' };
+          if (len) headers['Content-Length'] = len;
+          res.writeHead(200, headers);
+          rRes.pipe(res);
+        }).on('error', () => { res.writeHead(502); res.end(); });
+        return;
+      }
+      if (ghRes.statusCode !== 200) { res.writeHead(404); res.end('Not found'); return; }
+      const len = ghRes.headers['content-length'];
+      const headers = { 'Content-Type': 'video/mp4', 'Accept-Ranges': 'bytes', 'Cache-Control': 'public, max-age=86400' };
+      if (len) headers['Content-Length'] = len;
+      res.writeHead(200, headers);
+      ghRes.pipe(res);
+    }).on('error', () => { res.writeHead(502); res.end(); });
+    return;
+  }
 
   if (url === '/healthz') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
