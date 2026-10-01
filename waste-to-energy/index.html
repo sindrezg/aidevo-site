@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waste-to-Energy & Waste-to-Methanol Engineering | Aidevo</title>
+<meta name="description" content="Independent feasibility studies and Pre-FEED engineering for waste-to-energy and waste-to-methanol projects. Mass and energy balances, technology selection, emissions modelling and cost estimates.">
+<meta property="og:title" content="Waste-to-Energy Engineering | Aidevo">
+<meta property="og:description" content="Independent feasibility studies and Pre-FEED engineering for waste-to-energy and waste-to-methanol projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aidevo.ai/waste-to-energy">
+<link rel="canonical" href="https://aidevo.ai/waste-to-energy">
+<link rel="stylesheet" href="/_next/static/css/index.DRPEh4jA.css">
+<link rel="icon" href="/favicon.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aidevo.ai/#org",
+      "name": "Aidevo AS",
+      "url": "https://aidevo.ai",
+      "logo": "https://aidevo.ai/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "szg@aidevo.ai",
+        "telephone": "+47 906 85 000",
+        "contactType": "sales"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Waste-to-Energy Feasibility & Pre-FEED",
+      "provider": { "@id": "https://aidevo.ai/#org" },
+      "serviceType": "Engineering feasibility study",
+      "description": "Independent feasibility studies and Pre-FEED engineering for waste-to-energy and waste-to-methanol projects.",
+      "areaServed": { "@type": "Place", "name": "Europe, North America, Middle East" }
+    }
+  ]
+}
+</script>
+<style>
+  .wte-hero { padding: 6rem 0 4rem; border-bottom: 1px solid hsl(0 0% 90%); }
+  .wte-hero .eyebrow { margin-bottom: .75rem; }
+  .wte-hero h1 { font-size: clamp(2rem, 4.5vw, 3.25rem); line-height: 1.12; max-width: 18ch; margin-bottom: 1.25rem; }
+  .wte-hero h1 span { opacity: .45; }
+  .wte-hero p { color: hsl(0 0% 45%); font-size: 1.05rem; line-height: 1.7; max-width: 52ch; }
+  .wte-section { padding: 4rem 0; max-width: 1240px; margin: 0 auto; padding-left: clamp(1.5rem,4vw,3.75rem); padding-right: clamp(1.5rem,4vw,3.75rem); }
+  .wte-section + .wte-section { border-top: 1px solid hsl(0 0% 92%); }
+  .wte-section h2 { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.15; margin: .5rem 0 1rem; }
+  .wte-section .lead { color: hsl(0 0% 45%); font-size: .95rem; line-height: 1.65; max-width: 56ch; margin-bottom: 2rem; }
+  .wte-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+  .wte-card { border: 1px solid hsl(0 0% 88%); border-radius: 8px; padding: 1.5rem; }
+  .wte-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+  .wte-card p { font-size: .875rem; color: hsl(0 0% 45%); line-height: 1.6; }
+  .wte-card .tag { display: inline-block; font-size: .6875rem; letter-spacing: .08em; text-transform: uppercase; color: hsl(160 55% 42%); font-weight: 600; margin-bottom: .5rem; }
+  .stages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; counter-reset: stage; }
+  .stage { border: 1px solid hsl(0 0% 88%); border-radius: 8px; padding: 1.5rem; position: relative; }
+  .stage::before { counter-increment: stage; content: "0" counter(stage); font-size: .75rem; letter-spacing: .08em; color: hsl(160 55% 42%); font-weight: 600; display: block; margin-bottom: .5rem; }
+  .stage h3 { font-size: 1rem; margin-bottom: .5rem; }
+  .stage p { font-size: .8125rem; color: hsl(0 0% 45%); line-height: 1.6; }
+  .example-box { background: hsl(220 15% 97%); border: 1px solid hsl(0 0% 88%); border-radius: 8px; padding: 2rem; margin-top: 2rem; }
+  .example-box .label { display: inline-block; font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; color: hsl(30 80% 50%); font-weight: 600; background: hsl(40 100% 95%); padding: .25rem .75rem; border-radius: 4px; margin-bottom: 1rem; }
+  .example-box h3 { font-size: 1.25rem; margin-bottom: .75rem; }
+  .example-box p { font-size: .875rem; color: hsl(0 0% 35%); line-height: 1.65; }
+  .example-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .8125rem; }
+  .example-table th { text-align: left; font-weight: 600; padding: .5rem .75rem; border-bottom: 2px solid hsl(0 0% 85%); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: hsl(0 0% 45%); }
+  .example-table td { padding: .5rem .75rem; border-bottom: 1px solid hsl(0 0% 92%); }
+  .form-section { background: hsl(220 30% 8%); color: #fff; border-radius: 10px; padding: 2.5rem; margin-top: 2rem; }
+  .form-section h2 { color: #fff; font-size: 1.5rem; margin-bottom: .5rem; }
+  .form-section .lead { color: hsl(0 0% 65%); margin-bottom: 1.5rem; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 640px; }
+  .form-field { display: flex; flex-direction: column; gap: .35rem; }
+  .form-field.full { grid-column: 1 / -1; }
+  .form-field label { font-size: .6875rem; letter-spacing: .05em; text-transform: uppercase; color: hsl(0 0% 60%); }
+  .form-field input, .form-field select, .form-field textarea {
+    font-size: .9375rem; padding: .65rem .75rem; border-radius: 6px;
+    border: 1px solid hsl(0 0% 25%); background: hsl(220 20% 12%); color: #fff;
+    font-family: inherit;
+  }
+  .form-field input::placeholder, .form-field textarea::placeholder { color: hsl(0 0% 40%); }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: none; border-color: hsl(160 55% 42%); }
+  .form-field textarea { resize: vertical; min-height: 80px; }
+  .form-note { font-size: .75rem; color: hsl(0 0% 50%); margin-top: .75rem; }
+  .form-success { display: none; padding: 1.5rem; background: hsl(160 50% 15%); border: 1px solid hsl(160 55% 30%); border-radius: 8px; margin-top: 1rem; }
+  .form-success h3 { color: hsl(160 55% 70%); font-size: 1rem; margin-bottom: .5rem; }
+  .form-success p { color: hsl(0 0% 70%); font-size: .875rem; }
+  @media (max-width: 760px) {
+    .stages, .form-grid { grid-template-columns: 1fr; }
+    .wte-hero { padding: 4rem 0 3rem; }
+  }
+</style>
+</head>
+<body class="antialiased">
+<div class="premium-site">
+
+<header class="site-header">
+  <a class="wordmark" href="/" aria-label="Aidevo home">AIDEVO<span aria-hidden="true">.</span></a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="/#deliverables">The package</a>
+    <a href="/#engineering">Engineering</a>
+    <a href="/waste-to-energy">Waste-to-energy</a>
+    <a href="/method">Our approach</a>
+  </nav>
+  <a class="header-contact" href="#enquiry">Discuss your waste project</a>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="wte-hero">
+<div class="wte-section" style="border:none; padding-top:0;">
+  <span class="eyebrow green">WASTE-TO-ENERGY & WASTE-TO-METHANOL</span>
+  <h1>Independent engineering for waste conversion projects. <span>From screening to Pre-FEED.</span></h1>
+  <p>Aidevo delivers feasibility studies and Pre-FEED engineering packages for waste-to-energy and waste-to-methanol projects. Mass and energy balances, technology selection, emissions modelling, equipment definition and cost estimates developed from a physics-based process model.</p>
+  <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+    <a class="button button-green" href="#enquiry">Discuss your waste project</a>
+    <a class="button button-outline" href="#example">See an illustrative study</a>
+  </div>
+</div>
+</section>
+
+<!-- WHO WE HELP -->
+<div class="wte-section">
+  <span class="eyebrow green">WHO WE WORK WITH</span>
+  <h2>For project developers, asset owners and engineering teams.</h2>
+  <p class="lead">If you need an independent technical assessment of a waste conversion project, we can help at the stage that matters to your next decision.</p>
+
+  <div class="wte-grid">
+    <div class="wte-card">
+      <div class="tag">Project developers</div>
+      <h3>Is the project physically and commercially viable?</h3>
+      <p>Before committing to FEED, understand whether the mass and energy balance closes, which technology routes are feasible for your feedstock, and what the realistic cost and revenue ranges are.</p>
+    </div>
+    <div class="wte-card">
+      <div class="tag">Asset owners & operators</div>
+      <h3>What does adding capacity or carbon capture change?</h3>
+      <p>Evaluate brownfield modifications, new process lines or CCS integration against existing site constraints. Understand thermal efficiency, utility requirements and capital implications.</p>
+    </div>
+    <div class="wte-card">
+      <div class="tag">Engineering & advisory teams</div>
+      <h3>Need a defined work package or independent verification?</h3>
+      <p>Sub-consultant scope for mass/energy balance, equipment sizing, emissions modelling, or process definition. Clear deliverables, agreed interfaces, traceable assumptions.</p>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT WE DELIVER -->
+<div class="wte-section">
+  <span class="eyebrow green">ENGINEERING SCOPE</span>
+  <h2>From initial screening to defined Pre-FEED.</h2>
+  <p class="lead">The scope and deliverables are agreed for each project. Here is how a typical engagement progresses.</p>
+
+  <div class="stages">
+    <div class="stage">
+      <h3>Site screening</h3>
+      <p>Feedstock characterisation, technology shortlisting, site-level energy balance and a directional economic read. Identifies whether to invest in a full study.</p>
+    </div>
+    <div class="stage">
+      <h3>Feasibility study</h3>
+      <p>Detailed mass and energy balance, technology selection with sensitivity analysis, emissions profile, CAPEX/OPEX estimate, gate fee and revenue scenarios. A signed verdict with documented assumptions.</p>
+    </div>
+    <div class="stage">
+      <h3>Pre-FEED package</h3>
+      <p>Process flow diagrams, equipment lists and datasheets, utility requirements, battery limits, preliminary P&IDs, cost model and a handover package for FEED.</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h3 style="font-size: 1rem; margin-bottom: .75rem;">Typical deliverable register</h3>
+    <table class="example-table">
+      <thead>
+        <tr><th>Document</th><th>Screening</th><th>Feasibility</th><th>Pre-FEED</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Design basis & assumptions</td><td>Directional</td><td>Detailed</td><td>Locked</td></tr>
+        <tr><td>Mass & energy balance</td><td>Indicative</td><td>Closed</td><td>Closed</td></tr>
+        <tr><td>Technology selection</td><td>Shortlist</td><td>Selected & justified</td><td>Defined</td></tr>
+        <tr><td>Emissions modelling</td><td>-</td><td>Estimated</td><td>Modelled</td></tr>
+        <tr><td>Process flow diagrams</td><td>Block flow</td><td>PFD</td><td>PFD + scoped P&ID</td></tr>
+        <tr><td>Equipment list & datasheets</td><td>-</td><td>Main equipment</td><td>Full register</td></tr>
+        <tr><td>CAPEX / OPEX estimate</td><td>Order of magnitude</td><td>Factored</td><td>Semi-detailed</td></tr>
+        <tr><td>Economic scenarios</td><td>-</td><td>Gate fee / revenue</td><td>Full DCF sensitivity</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TECHNOLOGY COVERAGE -->
+<div class="wte-section">
+  <span class="eyebrow green">TECHNOLOGY COVERAGE</span>
+  <h2>Waste-to-energy and waste-to-methanol.</h2>
+  <p class="lead">The process model covers the main commercial and emerging conversion routes. Technology selection is based on feedstock properties, scale and project requirements.</p>
+
+  <div class="wte-grid" style="grid-template-columns: 1fr 1fr;">
+    <div class="wte-card">
+      <h3>Waste-to-energy</h3>
+      <p>Grate combustion, fluidised bed, rotary kiln, gasification with gas engine or combined cycle. Heat recovery steam generation, district heating integration, CCS bolt-on assessment.</p>
+    </div>
+    <div class="wte-card">
+      <h3>Waste-to-methanol</h3>
+      <p>Gasification with syngas cleanup and methanol synthesis. Feedstock flexibility analysis, gas conditioning requirements, catalyst performance under varying compositions. Biomethanol certification pathways.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ILLUSTRATIVE EXAMPLE -->
+<div class="wte-section" id="example">
+  <span class="eyebrow" style="color: hsl(30 80% 50%);">ILLUSTRATIVE EXAMPLE</span>
+  <h2>What a feasibility output looks like.</h2>
+  <p class="lead">This is a constructed example, not a client project. It shows the type and depth of analysis a feasibility study produces.</p>
+
+  <div class="example-box">
+    <div class="label">Illustrative example &mdash; not a client project</div>
+    <h3>30 MW thermal, RDF-fired energy recovery facility</h3>
+    <p>A hypothetical project in Southern Europe processing 120,000 tonnes per year of refuse-derived fuel, with combined heat and power output and flue gas treatment to EU Industrial Emissions Directive standards.</p>
+
+    <table class="example-table" style="margin-top: 1.5rem;">
+      <thead><tr><th>Parameter</th><th>Value</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr><td>Thermal input</td><td>30 MW<sub>th</sub></td><td>RDF at 12.5 MJ/kg (as-received), 90% availability</td></tr>
+        <tr><td>Feedstock throughput</td><td>~120,000 t/yr</td><td>Based on lower heating value and operating hours</td></tr>
+        <tr><td>Net electrical output</td><td>~7.2 MW<sub>e</sub></td><td>Steam cycle at 40 bar / 400 &deg;C, gross-to-net ~24%</td></tr>
+        <tr><td>Heat recovery (optional)</td><td>~12 MW<sub>th</sub></td><td>District heating extraction, reduces electrical output</td></tr>
+        <tr><td>Flue gas treatment</td><td>SNCR + dry scrubber + bag filter + ACI</td><td>EU IED / BAT-AEL compliance</td></tr>
+        <tr><td>Bottom ash</td><td>~22% of feedstock mass</td><td>Typical range for RDF combustion</td></tr>
+        <tr><td>CO<sub>2</sub> intensity</td><td>~0.9 t CO<sub>2</sub> / MWh<sub>e</sub> (gross)</td><td>Mixed biogenic/fossil fraction in RDF</td></tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top: 1.5rem; padding: 1rem; background: white; border: 1px solid hsl(0 0% 88%); border-radius: 6px;">
+      <h4 style="font-size: .875rem; margin-bottom: .5rem;">Economic sensitivity (illustrative ranges)</h4>
+      <p style="font-size: .8125rem; color: hsl(0 0% 45%); line-height: 1.6;">
+        Gate fee required for breakeven depends on CAPEX, electricity offtake price and heat revenue.
+        For projects at this scale, published industry data suggests CAPEX in the range of 8,000&ndash;12,000 EUR per installed kW<sub>e</sub> for grate systems.
+        Actual economics depend on site-specific factors including grid connection, waste supply security, permitting timeline and financing structure.
+        A feasibility study quantifies these sensitivities for the specific project configuration.
+      </p>
+    </div>
+
+    <p style="margin-top: 1rem; font-size: .75rem; color: hsl(0 0% 55%); font-style: italic;">
+      This example uses published reference data and standard engineering correlations.
+      It does not represent a recommendation, forecast or guarantee of project outcomes.
+      Actual feasibility study results depend on site-specific data and validated assumptions.
+    </p>
+  </div>
+</div>
+
+<!-- ENQUIRY FORM -->
+<div class="wte-section" id="enquiry">
+  <div class="form-section">
+    <span class="eyebrow green" style="color: hsl(160 55% 55%);">YOUR PROJECT</span>
+    <h2>Discuss your waste project.</h2>
+    <p class="lead">Tell us about your project and we will come back with a proposed scope, deliverables and timeline.</p>
+
+    <form id="enquiry-form" class="form-grid">
+      <div class="form-field">
+        <label for="f_name">Name *</label>
+        <input id="f_name" name="name" required placeholder="Your name">
+      </div>
+      <div class="form-field">
+        <label for="f_email">Work email *</label>
+        <input id="f_email" name="email" type="email" required placeholder="name@company.com">
+      </div>
+      <div class="form-field">
+        <label for="f_company">Company *</label>
+        <input id="f_company" name="company" required placeholder="Company name">
+      </div>
+      <div class="form-field">
+        <label for="f_country">Country *</label>
+        <input id="f_country" name="country" required placeholder="Project location">
+      </div>
+      <div class="form-field">
+        <label for="f_waste">Waste type</label>
+        <select id="f_waste" name="waste_type">
+          <option value="">Select waste type</option>
+          <option>Municipal solid waste (MSW)</option>
+          <option>Refuse-derived fuel (RDF / SRF)</option>
+          <option>Commercial & industrial waste</option>
+          <option>Biomass / wood waste</option>
+          <option>Mixed / other</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="f_tonnage">Annual tonnage (approx.)</label>
+        <input id="f_tonnage" name="annual_tonnage" placeholder="e.g. 150,000 tonnes/year">
+      </div>
+      <div class="form-field">
+        <label for="f_product">Desired end product</label>
+        <select id="f_product" name="end_product">
+          <option value="">Select end product</option>
+          <option>Electricity</option>
+          <option>Electricity + heat (CHP)</option>
+          <option>Methanol / biomethanol</option>
+          <option>Syngas</option>
+          <option>Multiple / undecided</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="f_phase">Project phase</label>
+        <select id="f_phase" name="project_phase">
+          <option value="">Select phase</option>
+          <option>Early concept / opportunity assessment</option>
+          <option>Pre-feasibility</option>
+          <option>Feasibility study</option>
+          <option>Pre-FEED / FEED preparation</option>
+          <option>Operating plant modification</option>
+        </select>
+      </div>
+      <div class="form-field full">
+        <label for="f_notes">Project notes (optional)</label>
+        <textarea id="f_notes" name="notes" placeholder="Any additional context: timeline, existing partners, specific questions..."></textarea>
+      </div>
+      <div class="form-field full">
+        <button type="submit" class="button button-green" id="submit-btn">Send project enquiry</button>
+      </div>
+      <div id="form-error" style="display:none; grid-column: 1/-1; padding: .75rem 1rem; background: hsl(0 70% 20%); border: 1px solid hsl(0 60% 35%); border-radius: 6px; color: hsl(0 80% 80%); font-size: .8125rem;"></div>
+    </form>
+    <p class="form-note">Your information is sent directly to the project lead. No automated mailing lists.</p>
+
+    <div id="form-success" class="form-success">
+      <h3>Thank you. We have received your enquiry.</h3>
+      <p>Sindre Zeiner-Gundersen will review your project details and respond within two business days. If you prefer, you can also reach us directly at <a href="mailto:szg@aidevo.ai" style="color: hsl(160 55% 55%);">szg@aidevo.ai</a> or <a href="tel:+4790685000" style="color: hsl(160 55% 55%);">+47 906 85 000</a>.</p>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <a href="/" class="wordmark">AIDEVO<span>.</span></a>
+    <p>Engineering intelligence.<br>Grounded in the physical world.</p>
+    <div>
+      <a href="/method">Our approach</a>
+      <a href="/waste-to-energy">Waste-to-energy</a>
+      <a href="/#deliverables">The package</a>
+    </div>
+    <div>
+      <a href="mailto:szg@aidevo.ai">szg@aidevo.ai</a>
+      <a href="tel:+4790685000">+47 906 85 000</a>
+      <span>Norway &middot; Working internationally</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Aidevo AS</span>
+    <a href="/privacy">Privacy</a>
+    <span>From first principles to better decisions.</span>
+  </div>
+</footer>
+
+</div>
+
+<script>
+document.getElementById('enquiry-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  const errEl = document.getElementById('form-error');
+  errEl.style.display = 'none';
+
+  const data = {
+    name: this.querySelector('#f_name').value.trim(),
+    email: this.querySelector('#f_email').value.trim(),
+    company: this.querySelector('#f_company').value.trim(),
+    country: this.querySelector('#f_country').value.trim(),
+    waste_type: this.querySelector('#f_waste').value,
+    annual_tonnage: this.querySelector('#f_tonnage').value.trim(),
+    end_product: this.querySelector('#f_product').value,
+    project_phase: this.querySelector('#f_phase').value,
+    notes: this.querySelector('#f_notes').value.trim(),
+  };
+
+  if (!data.name || !data.email || !data.company || !data.country) {
+    errEl.textContent = 'Please fill in all required fields.';
+    errEl.style.display = 'block';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  try {
+    const res = await fetch('/api/enquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    const result = await res.json();
+    if (result.ok) {
+      this.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    } else {
+      throw new Error(result.error || 'Failed to send');
+    }
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Send project enquiry';
+    errEl.textContent = 'Could not send your enquiry. Please email szg@aidevo.ai directly.';
+    errEl.style.display = 'block';
+  }
+});
+</script>
+</body>
+</html>
